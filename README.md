@@ -2,7 +2,7 @@
 
 An AI voice-support agent that handles **order tracking** and **return requests**,
 similar to how a Daraz call center agent would — built as a portfolio project
-mapping directly to an *Associate AI Engineer* job description (FastAPI,
+ (FastAPI,
 WebSockets, Voice AI, prompt engineering, LLM integration, production thinking).
 
 ## Architecture
@@ -37,7 +37,7 @@ Why two Gemini calls instead of one? It's a deliberate production pattern:
 |---------------------|-----------------------------------------|
 | Backend / API        | FastAPI                                |
 | Real-time transport   | WebSockets                             |
-| LLM / conversation    | Google Gemini API (`gemini-2.0-flash`) |
+| LLM / conversation    | Google Gemini API (`gemini-3.6-flash`) |
 | Speech-to-text        | Browser Web Speech API (free, no key)  |
 | Text-to-speech        | Browser SpeechSynthesis API (free)     |
 | Order data            | Mock in-memory DB (`order_db.py`)      |
